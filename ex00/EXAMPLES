@@ -1,0 +1,4 @@
+- Lista: mantém ordem, permite repetição e é mutável (você altera depois).
+- Tupla: mantém ordem, permite repetição, mas é imutável (qualquer tentativa de alterar dá erro).
+- Set: não mantém ordem e não aceita duplicados (ele “engole” o repetido).
+- Dict: mapeia chave → valor, chaves são únicas; se repetir chave, o último valor sobrescreve.
