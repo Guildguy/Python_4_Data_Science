@@ -1,11 +1,10 @@
-import time as t
-import datetime as dt
+from datetime import datetime as dt
 
-print(dt.timezone)#atributos utc
-
-print(dt.date)#atributos year, month, day
-print(dt.time)#atributos hour, minute, second, microsecond, tzinfo
-print(dt.datetime)#atributos year, month, day, hour, minute, second, microsecond, tzinfo
-first_time = dt.timestamp(dt.date(1, 1, 1970))
-print(f"Seconds since {first_time}")
-#print(time)
+#print(dt.timezone)#atributos utc
+#print(dt.date)#atributos year, month, day
+#print(dt.time)#atributos hour, minute, second, microsecond, tzinfo
+#print(dt.datetime)#atributos year, month, day, hour, minute, second, microsecond, tzinfo
+now = dt.now()
+seconds = now.timestamp()
+print(f"Seconds since January 1, 1970: {seconds:,.4f} or {seconds:.2e} in scientific notation")
+print(f"{now.strftime('%b %d %Y')}")
